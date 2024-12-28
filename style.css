@@ -291,7 +291,7 @@ span{
 }
 
 .review button{
-    background-color: #09a5ee;
+    background-color: #059862;
     color: white;
     border: none;
     border-radius: 5px;
@@ -325,7 +325,7 @@ span{
  
   }
 
-  .paints h4{
+  .paints .product-type{
     font-size: 1.3rem;
     color: #FEFE00;
     background: #044e68;
@@ -334,11 +334,24 @@ span{
     border-radius: 10px;
   }
   
-  .paint-main {
+  /* .paint-main {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
+
+  } */
+
+  .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 480px) {
+    .cards-container {
+      gap: 1.5rem;
+    }
   }
   
   .paint {
@@ -374,7 +387,8 @@ span{
   .view-more-btn {
     margin: 1rem 0;
     padding: 0.5rem 1rem;
-    background: #05318a; 
+    /* background: #05318a;  */
+    background: #059862;
     color: white;
     border: none;
     border-radius: 5px;
@@ -385,7 +399,7 @@ span{
   }
   
   .view-more-btn:hover {
-    background-color: #042a38;
+    background: #025033;
   }
   
   /* Hidden Price List */
