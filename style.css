@@ -17,9 +17,11 @@ body {
 }
 
 .swami-profile {
-    width: 100%;
+   max-width: 400px;
     margin: 0 auto;
     padding: 20px;
+    overflow-x: hidden;
+
 }
 
 /* Logo Section */
@@ -87,6 +89,7 @@ body {
     text-align: center;
     margin-bottom: 15px;
     color: #09a5ee; 
+    font-size: 1.4rem;
 
 }
 
@@ -121,6 +124,63 @@ span{
 
 .btns{
     display: flex;
+}
+
+
+/* caousel */
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Hide images that are not in the viewport */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    flex-shrink: 0; /* Ensure images don’t shrink below their size */
+}
+
+/* Buttons for navigation */
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carousel button.prev {
+    left: 10px;
+}
+
+.carousel button.next {
+    right: 10px;
+}
+
+.carousel button:hover {
+    background-color: #fdd835; /* Yellow color on hover */
+    color: #d32f2f; /* Red color for the text */
+}
+
+/* Media Query for larger screens */
+@media only screen and (min-width: 600px) {
+    .carousel button {
+        padding: 15px;
+    }
 }
 
 
@@ -167,6 +227,7 @@ span{
     color: #09a5ee;
     margin-bottom: 15px;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .why-choose-us p {
@@ -179,12 +240,16 @@ span{
 
 #testimonials {
     background-color: #fff;
-    padding: 50px 20px;
+    padding: 20px 20px;
     text-align: center;
     margin: 0 15px;
     border-radius: 10px;
 }
 
+#testimonials h2{
+    font-size: 1.4rem;
+    color: #09a5ee;
+}
 
 .testimonial-slider {
     display: flex;
@@ -317,15 +382,25 @@ span{
   }
   
   .paints h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #09a5ee;
     text-align: center;
     margin-bottom: 1rem;
-    text-transform: uppercase;
+
  
   }
 
   .paints .product-type{
+    font-size: 1.3rem;
+    color: #FEFE00;
+    background: #044e68;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+
+  .heading{
     font-size: 1.3rem;
     color: #FEFE00;
     background: #044e68;
@@ -346,13 +421,10 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* gap: 1.5rem; */
   }
 
-  @media (min-width: 480px) {
-    .cards-container {
-      gap: 1.5rem;
-    }
-  }
+
   
   .paint {
     background-color: #ffffff;
@@ -380,8 +452,9 @@ span{
   
   .paint img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: fill;
+    
   }
   
   .view-more-btn {
@@ -401,7 +474,8 @@ span{
   .view-more-btn:hover {
     background: #025033;
   }
-  
+
+
   /* Hidden Price List */
   .sub-paints {
     display: none; /* Hidden by default */
