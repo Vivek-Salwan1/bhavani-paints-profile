@@ -11,18 +11,22 @@
 
 body {
     font-family: 'Arial', Helvetica, sans-serif;
-    background-color: #f5f5f5; /* Light grey background for the whole page */
+    background-color: #3a3a3aaa; 
+    /* background: rgba(0,0,0,0.5); */
     color: #333; /* Dark grey text for better readability */
     overflow-x: hidden;
 }
 
 .swami-profile {
-   max-width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     overflow-x: hidden;
+    background-image: url(./bg.jpg);
+    
 
 }
+
 
 /* Logo Section */
 .logo-name {
@@ -39,7 +43,8 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 2px solid #09a5ee; 
+    background: #ffffff85;
+    border: 2px solid #39AEAC; 
     margin: 0 auto 10px;
     overflow: hidden; /* Ensures the image stays within the circle */
     display: flex; /* Flexbox for centering the image */
@@ -78,7 +83,7 @@ body {
 
 /* About Section */
 .about {
-    background-color: #fff; 
+    background-color: rgba(173, 173, 173, 0.1); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -216,7 +221,7 @@ span{
 
 /* Why Choose Us Section */
 .why-choose-us {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -239,7 +244,7 @@ span{
 /* testimonials */
 
 #testimonials {
-    background-color: #fff;
+    background-color: #ffffffc1;
     padding: 20px 20px;
     text-align: center;
     margin: 0 15px;
@@ -260,7 +265,7 @@ span{
 }
 
 .testimonial-item {
-    background-color: #fff;
+    background-color: #ffffffe4;
     border-radius: 10px;
     padding: 20px;
     border: 1px solid black;
@@ -376,7 +381,7 @@ span{
   /* Paints Section */
   .paints {
     padding: 2rem;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     font-family: 'Arial', sans-serif;
     border-radius: 10px;
   }
@@ -386,8 +391,6 @@ span{
     color: #09a5ee;
     text-align: center;
     margin-bottom: 1rem;
-
- 
   }
 
   .paints .product-type{
@@ -525,7 +528,7 @@ span{
 
 /* Contacts Section */
 .contacts {
-    background-color: #fff;
+    background-color: #ffffffae;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
